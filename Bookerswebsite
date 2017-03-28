@@ -1,1 +1,17 @@
-print("AustinBooker")
+Twitter.py
+import webbrowser
+import time
+socialMediaUrls =["www.google.com", "www.spotify.com"] 
+techUrls = ["www.reddit.com"]
+
+def open_tabs(url_list):
+	for element in url_list:
+		webbrowser.open_new_tab(element)
+
+		def main():
+			webbrowser.open ("www.reddit.com", new=0, autoraise=False)
+			time.sleep(1)
+			open_tabs(socialMediaUrls)
+			open_tabs(techUrls)
+
+			main()
